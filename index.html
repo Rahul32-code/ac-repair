@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Home  </title>
+    <title> Home </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -51,16 +51,19 @@
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/assimox.css" />
     <link rel="stylesheet" href="assets/css/assimox-responsive.css" />
+
+    <link rel="stylesheet" href="assets/css/custom.css">
+
 </head>
 
 <body class="custom-cursor">
+    <!-- book btn -->
+    <a href="book-now.html" class="book-btn">
+        Book Now
+    </a>
 
     <div class="custom-cursor__cursor"></div>
     <div class="custom-cursor__cursor-two"></div>
-
-
-
-
 
     <!-- preloader -->
     <div class="loader-wrap">
@@ -99,9 +102,6 @@
         </div>
     </div>
     <!-- preloader end -->
-
-
-
 
     <!-- Start sidebar widget content -->
     <div class="xs-sidebar-group info-group info-sidebar">
@@ -192,18 +192,28 @@
     </div>
     <!-- End sidebar widget content -->
 
-
     <div class="page-wrapper">
         <header class="main-header-two">
             <div class="main-header-two__top">
-                <div >
+                <div>
                     <div class="main-header-two__top-inner px-4">
-                        <div class="main-header-two__top-left">
+                        <div class="main-header-two__top-left d-flex align-items-center">
                             <div class="main-header-two__top-number">
-                                <a href="tel:18004567890"> <span>Call Us :</span> 1800 456 7890</a>
+                                <a href="tel:18004567890" class="text-decoration-none text-light">
+                                    <span>Call Us :</span> 1800 456 7890
+                                </a>
                             </div>
-                            <div class="main-header-two__top-text-box">
-                                <p>interested in Free Consultation ? <a href="contact.html">Consult Now</a></p>
+                            <div class="mx-3 text-light">|</div>
+                            <div class="main-header-two__top-text">
+                                <a href="mailto:contact@assimox.com" class="text-light text-decoration-none">
+                                    <span>Email Us :</span> contact@assimox.com
+                                </a>
+                            </div>
+                            <div class="mx-3 text-light">|</div>
+                            <div class="main-header-two__top-text">
+                                <a href="mailto:contact@assimox.com" class="text-light text-decoration-none">
+                                    <span>Location :</span> 54B, Tailstoi Town 5238 MT
+                                </a>
                             </div>
                         </div>
                         <div class="main-header-two__top-right">
@@ -231,56 +241,29 @@
                                         <li class="current">
                                             <a href="index.html">Home </a>
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="#">About Us</a>
-                                            <ul>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="company-history.html">Company History</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                            </ul>
+                                        <li>
+                                            <a href="about.html">About Us</a>
                                         </li>
                                         <li class="dropdown">
-                                            <a href="#">Services</a>
+                                            <a href="services.html">Services</a>
                                             <ul>
-                                                <li><a href="services.html">Services</a></li>
                                                 <li><a href="single-service.html">Single Service</a></li>
+                                                <li><a href="">AC Repair</a></li>
+                                                <li><a href="">AC Installation</a></li>
+                                                <li><a href="">AC Gas Filling</a></li>
+                                                <li><a href="">AC Maintenance</a></li>
+
                                             </ul>
                                         </li>
-                                        <li class="dropdown">
-                                            <a href="#">Projects</a>
-                                            <ul>
-                                                <li><a href="projects.html">Projects</a></li>
-                                                <li><a href="project-details.html">Project Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Pages</a>
-                                            <ul>
-                                                <li><a href="appointment.html">Appointment</a></li>
-                                                <li><a href="coupons-and-offers.html">Coupons Offer</a></li>
-                                                <li><a href="finance.html">Finance</a></li>
-                                                <li><a href="prices.html">Prices</a></li>
-                                                <li><a href="faq.html">FAQs</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown">
-                                            <a href="#">Blog</a>
-                                            <ul>
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
+                                        <li>
+                                            <a href="packages.html">Packages</a>
                                         </li>
                                         <li>
                                             <a href="contact.html">Contact Us</a>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="main-menu-two__search-nav-sidebar">
-                                    <div class="main-menu-two__search-box">
-                                        <a href="#"
-                                            class="main-menu-two__search search-toggler icon-magnifying-glass"></a>
-                                    </div>
+                                <div class="main-menu-two__search-nav-sidebar gap-2">
                                     <div class="main-menu-two__side-content-icon">
                                         <a class="navSidebar-button" href="#">
                                             <span class="icon-dots-menu-2-1"></span>
@@ -410,7 +393,7 @@
                             <div class="about-two__img-box wow slideInLeft" data-wow-delay="100ms"
                                 data-wow-duration="2500ms">
                                 <div class="about-two__img">
-                                    <img src="assets/images/resources/about-two-img-1.jpg" alt="" >
+                                    <img src="assets/images/resources/about-two-img-1.jpg" alt="">
                                 </div>
                                 <div class="about-two__experience-box">
                                     <span>30</span>
@@ -652,7 +635,7 @@
         <!--Services Two End-->
 
         <!--Our Mission Start-->
-        <section class="our-mission">
+        <!-- <section class="our-mission">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6">
@@ -683,7 +666,6 @@
                     <div class="col-xl-6 col-lg-6">
                         <div class="our-mission__right">
                             <div class="row">
-                                <!--Our Mission Single Start-->
                                 <div class="col-xl-6">
                                     <div class="our-mission__single">
                                         <p class="our-mission__title">our vision</p>
@@ -692,8 +674,6 @@
                                             streamlined cloud solution. strat egies to ensure proactive.</p>
                                     </div>
                                 </div>
-                                <!--Our Mission Single Start-->
-                                <!--Our Mission Single Start-->
                                 <div class="col-xl-6">
                                     <div class="our-mission__single">
                                         <p class="our-mission__title">our misson</p>
@@ -702,79 +682,294 @@
                                             streamlined cloud solution. strat egies to ensure proactive.</p>
                                     </div>
                                 </div>
-                                <!--Our Mission Single Start-->
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--Our Mission End-->
 
-        <!--Vission Start-->
-        <section class="vission">
-            <div class="vission__wrap">
-                <div class="vission__left">
-                    <div class="vission__bg" style="background-image: url(assets/images/resources/vission-bg-img.jpg);">
-                    </div>
-                </div>
-                <div class="vission__right">
-                    <div class="vission__bg-img"
-                        style="background-image: url(assets/images/backgrounds/vission-bg-img.jpg);"></div>
-                    <div class="vission__right-inner">
-                        <div class="vission__count-area">
-                            <ul class="vission__count-box list-unstyled">
-                                <li>
-                                    <h3 class="odometer" data-count="2.6">00</h3><span
-                                        class="vission__successful-letter">k</span>
-                                    <p class="vission__successful-text">Successful
-                                        <br> Projects
-                                    </p>
-                                    <div class="vission__btn">
-                                        <a href="#"><span class="icon-right-arrow"></span>more</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <h3 class="odometer" data-count="99">00</h3><span
-                                        class="vission__successful-letter">%</span>
-                                    <p class="vission__successful-text">Client
-                                        <br> Satisfaction
-                                    </p>
-                                    <div class="vission__btn">
-                                        <a href="#"><span class="icon-right-arrow"></span>more</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="company-vission">
+        <!--Why Choose One Start-->
+        <section class="why-choose-one">
+            <div class="why-choose-one__img-1">
+                <img src="assets/images/resources/why-choose-one-img-1.jpg" alt="">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-9">
+                        <div class="why-choose-one__content">
                             <div class="section-title text-left">
-                                <span class="section-title__tagline">company vision</span>
-                                <h2 class="section-title__title">Repair Appliances
-                                    Beyound Expectations</h2>
+                                <span class="section-title__tagline">why choose us</span>
+                                <h2 class="section-title__title">Our Advantages</h2>
                             </div>
-                            <p class="company-vission__text-1">At the end of the day, going forward, a new normal that
-                                has
-                                lved from generation.</p>
-                            <p class="company-vission__text-2">The runway heading towards a streamlined cloud solution.
-                                strategies to ensure proactive domination. At the end of the day,User generated content
-                                in real-time will have multiple touchpoints for offshoring. At the end of the day,User
-                                generated content in real-time will have multiple touchpoints for offshoring. </p>
+                            <p class="why-choose-one__text">If you need to repair or replace your Plumbing system, call
+                                today and talk to one of our Plumbing specialists. They’ll answer all your questions and
+                                arrange an appointment at your convenience. If you need to repair or replace your
+                                Plumbing system call today and talk to one.</p>
+                            <div class="why-choose-one__points-box">
+                                <ul class="list-unstyled why-choose-one__points">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-clock"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>We Perform All <br> Work On Time</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-home"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Professional <br> Standard</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="list-unstyled why-choose-one__points why-choose-one__points-two">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-guarantee"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>We Guarantee <br> Spare Parts</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-worker"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Over 18 Year <br> Of Experience</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--Vission End-->
+        <!--Why Choose One End-->
+
+        <!--Project One Start-->
+        <section class="project-one">
+            <div class="project-one__top">
+                <div class="container">
+                    <div class="section-title text-left">
+                        <span class="section-title__tagline">our work</span>
+                        <h2 class="section-title__title">Our Projects</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="project-one__bottom">
+                <div class="container">
+                    <div class="project-one__carousel owl-carousel owl-theme thm-owl__carousel" data-owl-options='{
+                        "loop": true,
+                        "autoplay": true,
+                        "margin": 30,
+                        "nav": true,
+                        "dots": false,
+                        "smartSpeed": 500,
+                        "autoplayTimeout": 10000,
+                        "navText": ["<span class=\"fa fa-angle-left\"></span>","<span class=\"fa fa-angle-right\"></span>"],
+                        "responsive": {
+                            "0": {
+                                "items": 1
+                            },
+                            "768": {
+                                "items": 2
+                            },
+                            "992": {
+                                "items": 3
+                            },
+                            "1200": {
+                                "items": 4
+                            }
+                        }
+                    }'>
+                        <!--Project One single Start-->
+                        <div class="item">
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="assets/images/project/project-1-1.jpg" alt="">
+                                    <div class="project-one__content">
+                                        <h4 class="project-one__title"><a href="project-details.html">Refrigerator Gas
+                                                Filling</a></h4>
+                                    </div>
+                                    <div class="project-one__button">
+                                        <a class="img-popup" href="assets/images/project/project-1-1.jpg">
+                                            <img src="assets/images/icon/icon-zoom-1.png" alt="">
+                                        </a>
+                                        <a href="project-details.html">
+                                            <img src="assets/images/icon/link-icon-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Project One single End-->
+                        <!--Project One single Start-->
+                        <div class="item">
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="assets/images/project/project-1-2.jpg" alt="">
+                                    <div class="project-one__content">
+                                        <h4 class="project-one__title"><a href="project-details.html">Refrigerator Gas
+                                                Filling</a></h4>
+                                    </div>
+                                    <div class="project-one__button">
+                                        <a class="img-popup" href="assets/images/project/project-1-1.jpg">
+                                            <img src="assets/images/icon/icon-zoom-1.png" alt="">
+                                        </a>
+                                        <a href="project-details.html">
+                                            <img src="assets/images/icon/link-icon-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Project One single End-->
+                        <!--Project One single Start-->
+                        <div class="item">
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="assets/images/project/project-1-3.jpg" alt="">
+                                    <div class="project-one__content">
+                                        <h4 class="project-one__title"><a href="project-details.html">Refrigerator Gas
+                                                Filling</a></h4>
+                                    </div>
+                                    <div class="project-one__button">
+                                        <a class="img-popup" href="assets/images/project/project-1-1.jpg">
+                                            <img src="assets/images/icon/icon-zoom-1.png" alt="">
+                                        </a>
+                                        <a href="project-details.html">
+                                            <img src="assets/images/icon/link-icon-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Project One single End-->
+                        <!--Project One single Start-->
+                        <div class="item">
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="assets/images/project/project-1-4.jpg" alt="">
+                                    <div class="project-one__content">
+                                        <h4 class="project-one__title"><a href="project-details.html">Refrigerator Gas
+                                                Filling</a></h4>
+                                    </div>
+                                    <div class="project-one__button">
+                                        <a class="img-popup" href="assets/images/project/project-1-1.jpg">
+                                            <img src="assets/images/icon/icon-zoom-1.png" alt="">
+                                        </a>
+                                        <a href="project-details.html">
+                                            <img src="assets/images/icon/link-icon-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Project One single End-->
+                        <!--Project One single Start-->
+                        <div class="item">
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="assets/images/project/project-1-1.jpg" alt="">
+                                    <div class="project-one__content">
+                                        <h4 class="project-one__title"><a href="project-details.html">Refrigerator Gas
+                                                Filling</a></h4>
+                                    </div>
+                                    <div class="project-one__button">
+                                        <a class="img-popup" href="assets/images/project/project-1-1.jpg">
+                                            <img src="assets/images/icon/icon-zoom-1.png" alt="">
+                                        </a>
+                                        <a href="project-details.html">
+                                            <img src="assets/images/icon/link-icon-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Project One single End-->
+                        <!--Project One single Start-->
+                        <div class="item">
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="assets/images/project/project-1-2.jpg" alt="">
+                                    <div class="project-one__content">
+                                        <h4 class="project-one__title"><a href="project-details.html">Refrigerator Gas
+                                                Filling</a></h4>
+                                    </div>
+                                    <div class="project-one__button">
+                                        <a class="img-popup" href="assets/images/project/project-1-1.jpg">
+                                            <img src="assets/images/icon/icon-zoom-1.png" alt="">
+                                        </a>
+                                        <a href="project-details.html">
+                                            <img src="assets/images/icon/link-icon-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Project One single End-->
+                        <!--Project One single Start-->
+                        <div class="item">
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="assets/images/project/project-1-3.jpg" alt="">
+                                    <div class="project-one__content">
+                                        <h4 class="project-one__title"><a href="project-details.html">Refrigerator Gas
+                                                Filling</a></h4>
+                                    </div>
+                                    <div class="project-one__button">
+                                        <a class="img-popup" href="assets/images/project/project-1-1.jpg">
+                                            <img src="assets/images/icon/icon-zoom-1.png" alt="">
+                                        </a>
+                                        <a href="project-details.html">
+                                            <img src="assets/images/icon/link-icon-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Project One single End-->
+                        <!--Project One single Start-->
+                        <div class="item">
+                            <div class="project-one__single">
+                                <div class="project-one__img">
+                                    <img src="assets/images/project/project-1-4.jpg" alt="">
+                                    <div class="project-one__content">
+                                        <h4 class="project-one__title"><a href="project-details.html">Refrigerator Gas
+                                                Filling</a></h4>
+                                    </div>
+                                    <div class="project-one__button">
+                                        <a class="img-popup" href="assets/images/project/project-1-1.jpg">
+                                            <img src="assets/images/icon/icon-zoom-1.png" alt="">
+                                        </a>
+                                        <a href="project-details.html">
+                                            <img src="assets/images/icon/link-icon-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Project One single End-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Project One End-->
 
         <!--Team One Start-->
-        <section class="team-three">
+        <!-- <section class="team-three">
             <div class="container">
                 <div class="section-title text-left">
                     <span class="section-title__tagline">Our Professionals</span>
                     <h2 class="section-title__title">Our Dedicated Team</h2>
                 </div>
                 <div class="row">
-                    <!--Team One Single Start-->
                     <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                         <div class="team-one__single">
                             <div class="team-one__img-box">
@@ -802,8 +997,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--Team One Single End-->
-                    <!--Team One Single Start-->
                     <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                         <div class="team-one__single">
                             <div class="team-one__img-box">
@@ -831,8 +1024,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--Team One Single End-->
-                    <!--Team One Single Start-->
                     <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
                         <div class="team-one__single">
                             <div class="team-one__img-box">
@@ -860,8 +1051,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--Team One Single End-->
-                    <!--Team One Single Start-->
                     <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
                         <div class="team-one__single">
                             <div class="team-one__img-box">
@@ -889,10 +1078,9 @@
                             </div>
                         </div>
                     </div>
-                    <!--Team One Single End-->
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--Team One End-->
 
         <!--Tetimonial One Start-->
@@ -1119,108 +1307,135 @@
         </section>
         <!--Flixible Price End-->
 
-        <!--Blog Two Start-->
-        <section class="blog-Two">
-            <div class="container">
-                <div class="blog-one__top">
-                    <div class="row">
-                        <div class="col-xl-7 col-lg-6">
-                            <div class="blog-one__top-left">
-                                <div class="section-title text-left">
-                                    <span class="section-title__tagline">our blogs</span>
-                                    <h2 class="section-title__title">News & Articles</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-6">
-                            <div class="blog-one__top-right">
-                                <p class="blog-one__top-text-1">At the end of the day, going forward, a new normal that
-                                    has evolved from generation X is on the runway heading towards a streamlined cloud
-                                    solution.</p>
-                            </div>
-                        </div>
-                    </div>
+        <!-- Call To Action Start -->
+        <section class="cta-modern position-relative overflow-hidden py-3 py-sm-4 py-md-5"
+            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <!-- Animated Background Elements - Responsive Sizing -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 overflow-hidden opacity-25">
+                <div class="position-absolute rounded-circle"
+                    style="top: -50px; right: -50px; width: 150px; height: 150px; background: rgba(255,255,255,0.1);">
                 </div>
-                <div class="blog-one__bottom">
-                    <div class="row">
-                        <!--Blog One Single Start-->
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="100ms">
-                            <div class="blog-one__single">
-                                <div class="blog-one__img-box">
-                                    <div class="blog-one__img">
-                                        <img src="assets/images/blog/blog-1-1.jpg" alt="">
-                                    </div>
+                <div class="position-absolute rounded-circle d-none d-sm-block"
+                    style="bottom: -80px; left: -80px; width: 200px; height: 200px; background: rgba(255,255,255,0.1);">
+                </div>
+                <div class="position-absolute rounded-circle d-none d-lg-block"
+                    style="top: 50%; left: 10%; width: 100px; height: 100px; background: rgba(255,255,255,0.1);"></div>
+            </div>
+
+            <div class="container position-relative px-3 px-sm-4 px-md-5">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 text-center">
+                        <!-- Heading - Responsive Font Size -->
+                        <h2 class="fw-bold text-white mb-3 mb-sm-4" style="font-size: clamp(1.5rem, 5vw, 2.5rem);">
+                            ❄️ Need AC Repair Service Today?
+                        </h2>
+
+                        <!-- Description - Responsive Text -->
+                        <p class="text-white-50 mb-4 mb-sm-5" style="font-size: clamp(0.9rem, 3vw, 1.2rem);">
+                            Fast, reliable & affordable service at your doorstep.
+                            <br class="d-none d-sm-block">
+                            <span class="d-inline-block mt-1 mt-sm-0">Get 20% OFF on first service!</span>
+                        </p>
+
+                        <!-- Buttons - Full width on mobile, auto on desktop -->
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-2 gap-sm-3 mb-4 mb-sm-5">
+                            <a href="tel:18004567890"
+                                class="btn btn-light btn-lg rounded-pill shadow-lg hover-scale w-100 w-sm-auto"
+                                style="padding: 0.75rem 1.5rem; font-size: clamp(0.9rem, 3vw, 1.1rem);">
+                                <i class="fas fa-phone-alt me-2"></i>
+                                Call Now: 1800-456-7890
+                            </a>
+                            <a href="#"
+                                class="btn btn-warning btn-lg rounded-pill shadow-lg hover-scale text-dark fw-bold w-100 w-sm-auto"
+                                style="padding: 0.75rem 1.5rem; font-size: clamp(0.9rem, 3vw, 1.1rem);">
+                                <i class="fas fa-calendar-alt me-2"></i>
+                                Book Free Inspection
+                            </a>
+                        </div>
+
+                        <!-- Trust Badges - Responsive Grid Layout -->
+                        <div class="row g-2 g-sm-3 justify-content-center">
+                            <div class="col-12 col-sm-auto">
+                                <div
+                                    class="d-flex align-items-center justify-content-center gap-2 bg-white bg-opacity-10 rounded-pill px-3 py-2">
+                                    <i class="fas fa-clock text-warning"></i>
+                                    <span class="small">24/7 Emergency</span>
                                 </div>
-                                <div class="blog-one__content-box">
-                                    <div class="blog-one__date">
-                                        <p><span>Admin</span>17 March 2022</p>
-                                    </div>
-                                    <h3 class="blog-one__title"><a href="blog-details.html">How we can fix any problem
-                                            in household
-                                            things.</a></h3>
+                            </div>
+                            <div class="col-12 col-sm-auto">
+                                <div
+                                    class="d-flex align-items-center justify-content-center gap-2 bg-white bg-opacity-10 rounded-pill px-3 py-2">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <span class="small">100% Guaranteed</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-auto">
+                                <div
+                                    class="d-flex align-items-center justify-content-center gap-2 bg-white bg-opacity-10 rounded-pill px-3 py-2">
+                                    <i class="fas fa-certificate text-warning"></i>
+                                    <span class="small">Certified Techs</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-auto">
+                                <div
+                                    class="d-flex align-items-center justify-content-center gap-2 bg-white bg-opacity-10 rounded-pill px-3 py-2">
+                                    <i class="fas fa-shield-alt text-warning"></i>
+                                    <span class="small">Free Inspection</span>
                                 </div>
                             </div>
                         </div>
-                        <!--Blog One Single End-->
-                        <!--Blog One Single Start-->
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="200ms">
-                            <div class="blog-one__single active">
-                                <div class="blog-one__img-box">
-                                    <div class="blog-one__img">
-                                        <img src="assets/images/blog/blog-1-2.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="blog-one__content-box">
-                                    <div class="blog-one__date">
-                                        <p><span>Admin</span>17 March 2022</p>
-                                    </div>
-                                    <h3 class="blog-one__title"><a href="blog-details.html">Lorem ipsum dolor sit amet,
-                                            consectetur
-                                            adipiscing</a></h3>
-                                </div>
+
+                        <!-- Additional Features - Responsive Text -->
+                        <div class="mt-4 pt-2">
+                            <div class="d-flex flex-wrap justify-content-center gap-2 gap-sm-3">
+                                <span class="text-white-50 small">
+                                    <i class="fas fa-check-circle text-success me-1"></i> No Hidden Charges
+                                </span>
+                                <span class="text-white-50 small">
+                                    <i class="fas fa-check-circle text-success me-1"></i> 30-Day Warranty
+                                </span>
+                                <span class="text-white-50 small">
+                                    <i class="fas fa-check-circle text-success me-1"></i> Same Day Service
+                                </span>
                             </div>
                         </div>
-                        <!--Blog One Single End-->
-                        <!--Blog One Single Start-->
-                        <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="300ms">
-                            <div class="blog-one__single">
-                                <div class="blog-one__img-box">
-                                    <div class="blog-one__img">
-                                        <img src="assets/images/blog/blog-1-3.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="blog-one__content-box">
-                                    <div class="blog-one__date">
-                                        <p><span>Admin</span>17 March 2022</p>
-                                    </div>
-                                    <h3 class="blog-one__title"><a href="blog-details.html">Nulla tristique elit turpis,
-                                            quis tempus
-                                            metus ipsum text</a></h3>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Blog One Single End-->
                     </div>
                 </div>
             </div>
         </section>
-        <!--Blog Two End-->
 
+        <style>
+            /* Minimal CSS for hover effects only - No responsive CSS needed */
+            .hover-scale {
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .hover-scale:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            }
+
+            /* Optional: Smooth transition for all elements */
+            * {
+                transition: all 0.2s ease;
+            }
+        </style>
+        <!-- Call To Action End -->
 
         <!--Site Footer Start-->
         <footer class="site-footer">
             <div class="site-footer__top">
-                <div class="container">
+                <div class="px-4">
                     <div class="site-footer__inner">
                         <div class="site-footer__contact-info">
                             <ul class="site-footer__contact-points list-unstyled">
                                 <li>
                                     <div class="icon">
-                                        <img src="assets/images/icon/footer-icon-1.png" alt="">
+                                        <img src="assets/images/icon/footer-icon-3.png" alt="">
                                     </div>
                                     <div class="content">
-                                        <h4>54B, Tailstoi Town 5238 MT,</h4>
-                                        <p>La city, IA 522364</p>
+                                        <h4>Call us on :</h4>
+                                        <a href="tel:+18004567890">+ 1800 456 7890</a>
                                     </div>
                                 </li>
                                 <li>
@@ -1234,11 +1449,11 @@
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <img src="assets/images/icon/footer-icon-3.png" alt="">
+                                        <img src="assets/images/icon/footer-icon-1.png" alt="">
                                     </div>
                                     <div class="content">
-                                        <h4>Call us on :</h4>
-                                        <a href="tel:+18004567890">+ 1800 456 7890</a>
+                                        <h4>54B, Tailstoi Town 5238 MT,</h4>
+                                        <p>La city, IA 522364</p>
                                     </div>
                                 </li>
                             </ul>
@@ -1247,7 +1462,7 @@
                 </div>
             </div>
             <div class="site-footer__middle">
-                <div class="container">
+                <div class="px-4">
                     <div class="row">
                         <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                             <div class="footer-widget__column footer-widget__about">
@@ -1311,11 +1526,11 @@
                 </div>
             </div>
             <div class="site-footer__bottom">
-                <div class="container">
+                <div class="px-4">
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="site-footer__bottom-inner">
-                                <p class="site-footer__bottom-text">© Copyright <a href="#">Assimox</a> 2022 . All
+                                <p class="site-footer__bottom-text">© Copyright <a href="#">Assimox</a> 2026 . All
                                     right reserved.</p>
                                 <div class="site-footer__bottom-text-two">
                                     <p>Created by <a href="#">DesignArc</a></p>
@@ -1329,7 +1544,8 @@
         <!--Site Footer End-->
 
 
-    </div><!-- /.page-wrapper -->
+    </div>
+    <!-- /.page-wrapper -->
 
 
     <div class="mobile-nav__wrapper">
@@ -1372,22 +1588,6 @@
     </div>
     <!-- /.mobile-nav__wrapper -->
 
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <!-- /.search-popup__overlay -->
-        <div class="search-popup__content">
-            <form action="#">
-                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
-                <input type="text" id="search" placeholder="Search Here..." />
-                <button type="submit" aria-label="search submit" class="thm-btn">
-                    <i class="icon-magnifying-glass"></i>
-                </button>
-            </form>
-        </div>
-        <!-- /.search-popup__content -->
-    </div>
-    <!-- /.search-popup -->
-
     <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
 
 
@@ -1418,14 +1618,7 @@
     <script src="assets/vendors/sidebar-content/jquery-sidebar-content.js"></script>
     <script src="assets/vendors/tweenmax/TweenMax.min.js"></script>
 
-
-
-
-    <!-- template js -->
-    <script src="assets/js/assimox.js"></script>
+    <script src="assets/js/assimox.js" defer></script>
 </body>
-
-
-<!-- Mirrored from bracketweb.com/assimox-html/index2.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 27 Mar 2026 08:56:07 GMT -->
 
 </html>
