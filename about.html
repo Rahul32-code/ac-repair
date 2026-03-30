@@ -298,472 +298,82 @@
             </div>
         </section>
         <!--Page Header End-->
-        <style>
-            /* Minimal Custom CSS */
-            .package-card {
-                transition: all 0.4s ease;
-                border: none;
-                border-radius: 24px;
-                overflow: hidden;
-            }
-
-            .package-card:hover {
-                transform: translateY(-10px);
-                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-            }
-
-            .package-card.popular {
-                border: 2px solid #ffc107;
-                position: relative;
-                transform: scale(1.02);
-            }
-
-            .popular-badge {
-                position: absolute;
-                top: 20px;
-                right: 20px;
-                background: linear-gradient(135deg, #ffc107, #ff9800);
-                color: #000;
-                padding: 5px 15px;
-                border-radius: 50px;
-                font-size: 12px;
-                font-weight: bold;
-                z-index: 10;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            }
-
-            .package-header {
-                padding: 30px 20px;
-                text-align: center;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-            }
-
-            .package-price {
-                font-size: 48px;
-                font-weight: 800;
-                color: #ffc107;
-            }
-
-            .package-price small {
-                font-size: 16px;
-                font-weight: 400;
-                color: #6c757d;
-            }
-
-            .package-features {
-                padding: 30px;
-            }
-
-            .package-features li {
-                margin-bottom: 15px;
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            }
-
-            .package-features li i.fa-check-circle {
-                color: #28a745;
-                font-size: 18px;
-            }
-
-            .package-features li i.fa-times-circle {
-                color: #dc3545;
-                font-size: 18px;
-            }
-
-            .package-features li i.fa-star {
-                color: #ffc107;
-                font-size: 18px;
-            }
-
-            .btn-package {
-                transition: all 0.3s ease;
-                border-radius: 50px;
-                padding: 12px 30px;
-                font-weight: 600;
-            }
-
-            .btn-package:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-            }
-
-            .section-badge {
-                display: inline-block;
-                padding: 8px 20px;
-                background: rgba(255, 193, 7, 0.1);
-                color: #ffc107;
-                border-radius: 50px;
-                font-weight: 600;
-                font-size: 14px;
-                margin-bottom: 20px;
-            }
-
-            .price-toggle {
-                background: #f8f9fa;
-                border-radius: 50px;
-                padding: 5px;
-                display: inline-flex;
-                gap: 10px;
-            }
-
-            .toggle-btn {
-                padding: 8px 25px;
-                border-radius: 50px;
-                border: none;
-                background: transparent;
-                font-weight: 600;
-                transition: all 0.3s ease;
-                cursor: pointer;
-            }
-
-            .toggle-btn.active {
-                background: #ffc107;
-                color: #000;
-                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            }
-
-            @media (max-width: 768px) {
-                .package-card.popular {
-                    transform: scale(1);
-                }
-
-                .package-price {
-                    font-size: 36px;
-                }
-            }
-
-            /* Animation */
-            @keyframes fadeInUp {
-                from {
-                    opacity: 0;
-                    transform: translateY(30px);
-                }
-
-                to {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-            }
-
-            .package-card {
-                animation: fadeInUp 0.6s ease forwards;
-                opacity: 0;
-            }
-
-            .package-card:nth-child(1) {
-                animation-delay: 0.1s;
-            }
-
-            .package-card:nth-child(2) {
-                animation-delay: 0.2s;
-            }
-
-            .package-card:nth-child(3) {
-                animation-delay: 0.3s;
-            }
-
-            .package-card:nth-child(4) {
-                animation-delay: 0.4s;
-            }
-        </style>
-        <section class="py-5" style="background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);">
-            <div class="container py-5">
-
-                <!-- Section Header -->
-                <div class="row justify-content-center text-center mb-5">
-                    <div class="col-lg-8">
-                        <span class="section-badge">
-                            <i class="fas fa-tags me-2"></i> Affordable Plans
-                        </span>
-                        <h2 class="display-5 fw-bold mb-3">Choose Your <span class="text-warning">Best Package</span>
-                        </h2>
-                        <p class="lead text-muted">Select the perfect service plan that fits your needs and budget. All
-                            packages include professional service with warranty.</p>
-
-                        <!-- Price Toggle (Optional) -->
-                        <div class="mt-4">
-                            <div class="price-toggle">
-                                <button class="toggle-btn active" onclick="showMonthly()">Monthly Plans</button>
-                                <button class="toggle-btn" onclick="showYearly()">Yearly Plans <span
-                                        class="badge bg-danger ms-1">Save 20%</span></button>
+        <!--About Three Start-->
+        <section class="about-three">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-7 col-lg-7">
+                        <div class="about-three__left">
+                            <div class="section-title text-left">
+                                <span class="section-title__tagline">about company</span>
+                                <h2 class="section-title__title">The Repairing Experts You’ve
+                                    Trusted For Over 30 Years.</h2>
+                            </div>
+                            <p class="about-three__text-1">Commercial & Residential Clients across Sydney Home
+                                Appliances for their fast and reliable 24 hour repairing services.</p>
+                            <p class="about-three__text-2">Leverage agile frameworks to provide a robust synopsis for
+                                high level overviews. Iterative approaches to corporate strategy foster collaborative
+                                thinking to further the overall value proposition. Organically grow the holistic world
+                                view of disruptive innovation via workplace diversity and empowerment. Organically grow
+                                the holistic world view of disruptive innovation via workplace diversity.</p>
+                            <p class="about-three__text-3">Organically grow the holistic world view of disruptive
+                                innovation via workplace diversity and empowerment organically grow the holistic.</p>
+                            <div class="about-three__points-box">
+                                <ul class="about-three__points list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-comment"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Qualified Team</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-comment"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Affordable Pricing</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="about-three__points list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-comment"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>Work On Time</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="icon-comment"></span>
+                                        </div>
+                                        <div class="text">
+                                            <p>24/7 EmergencyService</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Packages Grid - Monthly Plans -->
-                <div id="monthly-plans" class="row g-4">
-                    <!-- Basic Package -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="package-card bg-white shadow-sm h-100">
-                            <div class="package-header bg-light">
-                                <i class="fas fa-snowflake fa-3x text-warning mb-3"></i>
-                                <h3 class="fw-bold mb-2">Basic Care</h3>
-                                <p class="text-muted small">Essential AC Maintenance</p>
-                                <div class="package-price">
-                                    ₹999 <small>/month</small>
+                    <div class="col-xl-5 col-lg-5">
+                        <div class="about-three__right">
+                            <div class="about-three__img-box wow slideInRight" data-wow-delay="100ms"
+                                data-wow-duration="2500ms">
+                                <div class="about-three__img">
+                                    <img src="assets/images/resources/about-three-img-1.jpg" alt="">
                                 </div>
-                                <div class="mt-2">
-                                    <span class="badge bg-success">Save 10%</span>
+                                <div class="about-three__count-box">
+                                    <h3 class="odometer" data-count="2.8">00</h3><span
+                                        class="about-three__letter">k</span><span class="about-three__plus">+</span>
+                                    <p class="about-three__count-text">Satisfied Clients
+                                        <br> In Our Locality
+                                    </p>
                                 </div>
-                            </div>
-                            <div class="package-features">
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check-circle"></i> AC Filter Cleaning</li>
-                                    <li><i class="fas fa-check-circle"></i> Coil Cleaning & Inspection</li>
-                                    <li><i class="fas fa-check-circle"></i> Gas Level Check</li>
-                                    <li><i class="fas fa-times-circle"></i> Deep Cleaning</li>
-                                    <li><i class="fas fa-times-circle"></i> Gas Refilling</li>
-                                    <li><i class="fas fa-times-circle"></i> Priority Support</li>
-                                    <li><i class="fas fa-times-circle"></i> Free Inspection</li>
-                                    <li><i class="fas fa-check-circle"></i> 7-Day Warranty</li>
-                                </ul>
-                                <div class="text-center mt-4">
-                                    <a href="#" class="btn btn-outline-warning btn-package w-100">
-                                        Choose Plan <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Standard Package - Popular -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="package-card bg-white shadow-lg h-100 popular">
-                            <div class="popular-badge">
-                                <i class="fas fa-star me-1"></i> Most Popular
-                            </div>
-                            <div class="package-header"
-                                style="background: linear-gradient(135deg, #ffc10710, #ff980010);">
-                                <i class="fas fa-wind fa-3x text-warning mb-3"></i>
-                                <h3 class="fw-bold mb-2">Standard Plus</h3>
-                                <p class="text-muted small">Complete AC Service</p>
-                                <div class="package-price">
-                                    ₹1,999 <small>/month</small>
-                                </div>
-                                <div class="mt-2">
-                                    <span class="badge bg-warning text-dark">🔥 Popular Choice</span>
-                                </div>
-                            </div>
-                            <div class="package-features">
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check-circle"></i> AC Filter Cleaning</li>
-                                    <li><i class="fas fa-check-circle"></i> Coil Cleaning & Inspection</li>
-                                    <li><i class="fas fa-check-circle"></i> Gas Level Check</li>
-                                    <li><i class="fas fa-check-circle"></i> Deep Cleaning</li>
-                                    <li><i class="fas fa-check-circle"></i> Gas Refilling (Up to 50%)</li>
-                                    <li><i class="fas fa-check-circle"></i> Priority Support</li>
-                                    <li><i class="fas fa-times-circle"></i> Free Inspection</li>
-                                    <li><i class="fas fa-check-circle"></i> 30-Day Warranty</li>
-                                </ul>
-                                <div class="text-center mt-4">
-                                    <a href="#" class="btn btn-warning btn-package w-100 fw-bold">
-                                        Choose Plan <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Premium Package -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="package-card bg-white shadow-sm h-100">
-                            <div class="package-header bg-light">
-                                <i class="fas fa-crown fa-3x text-warning mb-3"></i>
-                                <h3 class="fw-bold mb-2">Premium Elite</h3>
-                                <p class="text-muted small">Full Coverage Service</p>
-                                <div class="package-price">
-                                    ₹3,499 <small>/month</small>
-                                </div>
-                                <div class="mt-2">
-                                    <span class="badge bg-info">Best Value</span>
-                                </div>
-                            </div>
-                            <div class="package-features">
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check-circle"></i> AC Filter Cleaning</li>
-                                    <li><i class="fas fa-check-circle"></i> Coil Cleaning & Inspection</li>
-                                    <li><i class="fas fa-check-circle"></i> Gas Level Check</li>
-                                    <li><i class="fas fa-check-circle"></i> Deep Cleaning</li>
-                                    <li><i class="fas fa-check-circle"></i> Full Gas Refilling</li>
-                                    <li><i class="fas fa-check-circle"></i> Priority Support 24/7</li>
-                                    <li><i class="fas fa-check-circle"></i> Free Inspection & Report</li>
-                                    <li><i class="fas fa-check-circle"></i> 90-Day Warranty</li>
-                                </ul>
-                                <div class="text-center mt-4">
-                                    <a href="#" class="btn btn-outline-warning btn-package w-100">
-                                        Choose Plan <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- AMC Package -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="package-card bg-white shadow-sm h-100">
-                            <div class="package-header bg-light">
-                                <i class="fas fa-calendar-alt fa-3x text-warning mb-3"></i>
-                                <h3 class="fw-bold mb-2">Annual AMC</h3>
-                                <p class="text-muted small">Yearly Maintenance</p>
-                                <div class="package-price">
-                                    ₹5,999 <small>/year</small>
-                                </div>
-                                <div class="mt-2">
-                                    <span class="badge bg-success">Save 40%</span>
-                                </div>
-                            </div>
-                            <div class="package-features">
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check-circle"></i> 4 Services Per Year</li>
-                                    <li><i class="fas fa-check-circle"></i> All Premium Features</li>
-                                    <li><i class="fas fa-check-circle"></i> 24/7 Priority Support</li>
-                                    <li><i class="fas fa-check-circle"></i> Free Parts Replacement</li>
-                                    <li><i class="fas fa-check-circle"></i> Free Gas Refilling</li>
-                                    <li><i class="fas fa-check-circle"></i> Free Annual Inspection</li>
-                                    <li><i class="fas fa-check-circle"></i> 1-Year Warranty</li>
-                                    <li><i class="fas fa-star text-warning"></i> VIP Priority Service</li>
-                                </ul>
-                                <div class="text-center mt-4">
-                                    <a href="#" class="btn btn-outline-warning btn-package w-100">
-                                        Choose Plan <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Packages Grid - Yearly Plans (Hidden by Default) -->
-                <div id="yearly-plans" class="row g-4" style="display: none;">
-                    <!-- Basic Yearly -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="package-card bg-white shadow-sm h-100">
-                            <div class="package-header bg-light">
-                                <i class="fas fa-snowflake fa-3x text-warning mb-3"></i>
-                                <h3 class="fw-bold mb-2">Basic Care</h3>
-                                <p class="text-muted small">Annual Essential Plan</p>
-                                <div class="package-price">
-                                    ₹9,999 <small>/year</small>
-                                </div>
-                                <div class="mt-2">
-                                    <span class="badge bg-success">Save 17%</span>
-                                </div>
-                            </div>
-                            <div class="package-features">
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check-circle"></i> 2 Services Per Year</li>
-                                    <li><i class="fas fa-check-circle"></i> Filter Cleaning (4 times)</li>
-                                    <li><i class="fas fa-check-circle"></i> Coil Cleaning (2 times)</li>
-                                    <li><i class="fas fa-check-circle"></i> Gas Level Check (2 times)</li>
-                                    <li><i class="fas fa-times-circle"></i> Gas Refilling</li>
-                                    <li><i class="fas fa-check-circle"></i> 15-Day Warranty</li>
-                                </ul>
-                                <div class="text-center mt-4">
-                                    <a href="#" class="btn btn-outline-warning btn-package w-100">
-                                        Choose Plan <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Standard Yearly - Popular -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="package-card bg-white shadow-lg h-100 popular">
-                            <div class="popular-badge">
-                                <i class="fas fa-star me-1"></i> Best Deal
-                            </div>
-                            <div class="package-header"
-                                style="background: linear-gradient(135deg, #ffc10710, #ff980010);">
-                                <i class="fas fa-wind fa-3x text-warning mb-3"></i>
-                                <h3 class="fw-bold mb-2">Standard Plus</h3>
-                                <p class="text-muted small">Annual Complete Plan</p>
-                                <div class="package-price">
-                                    ₹18,999 <small>/year</small>
-                                </div>
-                                <div class="mt-2">
-                                    <span class="badge bg-warning text-dark">🔥 Save 21%</span>
-                                </div>
-                            </div>
-                            <div class="package-features">
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check-circle"></i> 3 Services Per Year</li>
-                                    <li><i class="fas fa-check-circle"></i> All Basic Features</li>
-                                    <li><i class="fas fa-check-circle"></i> Deep Cleaning (3 times)</li>
-                                    <li><i class="fas fa-check-circle"></i> Gas Refilling (1 time free)</li>
-                                    <li><i class="fas fa-check-circle"></i> Priority Support</li>
-                                    <li><i class="fas fa-check-circle"></i> 60-Day Warranty</li>
-                                </ul>
-                                <div class="text-center mt-4">
-                                    <a href="#" class="btn btn-warning btn-package w-100 fw-bold">
-                                        Choose Plan <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Premium Yearly -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="package-card bg-white shadow-sm h-100">
-                            <div class="package-header bg-light">
-                                <i class="fas fa-crown fa-3x text-warning mb-3"></i>
-                                <h3 class="fw-bold mb-2">Premium Elite</h3>
-                                <p class="text-muted small">Annual Premium Plan</p>
-                                <div class="package-price">
-                                    ₹29,999 <small>/year</small>
-                                </div>
-                                <div class="mt-2">
-                                    <span class="badge bg-info">Save 28%</span>
-                                </div>
-                            </div>
-                            <div class="package-features">
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check-circle"></i> 4 Services Per Year</li>
-                                    <li><i class="fas fa-check-circle"></i> All Standard Features</li>
-                                    <li><i class="fas fa-check-circle"></i> Free Gas Refilling (2 times)</li>
-                                    <li><i class="fas fa-check-circle"></i> 24/7 Priority Support</li>
-                                    <li><i class="fas fa-check-circle"></i> Free Parts Up to ₹2000</li>
-                                    <li><i class="fas fa-check-circle"></i> 1-Year Warranty</li>
-                                </ul>
-                                <div class="text-center mt-4">
-                                    <a href="#" class="btn btn-outline-warning btn-package w-100">
-                                        Choose Plan <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Business Yearly -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="package-card bg-white shadow-sm h-100">
-                            <div class="package-header bg-light">
-                                <i class="fas fa-building fa-3x text-warning mb-3"></i>
-                                <h3 class="fw-bold mb-2">Business Pro</h3>
-                                <p class="text-muted small">Commercial Plan</p>
-                                <div class="package-price">
-                                    ₹49,999 <small>/year</small>
-                                </div>
-                                <div class="mt-2">
-                                    <span class="badge bg-danger">Best for Office</span>
-                                </div>
-                            </div>
-                            <div class="package-features">
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-check-circle"></i> 6 Services Per Year</li>
-                                    <li><i class="fas fa-check-circle"></i> All Premium Features</li>
-                                    <li><i class="fas fa-check-circle"></i> Unlimited Support Calls</li>
-                                    <li><i class="fas fa-check-circle"></i> Free Parts Replacement</li>
-                                    <li><i class="fas fa-check-circle"></i> Monthly Maintenance Report</li>
-                                    <li><i class="fas fa-check-circle"></i> 2-Year Warranty</li>
-                                </ul>
-                                <div class="text-center mt-4">
-                                    <a href="#" class="btn btn-outline-warning btn-package w-100">
-                                        Choose Plan <i class="fas fa-arrow-right ms-2"></i>
-                                    </a>
+                                <div class="about-three__img-2 float-bob-y">
+                                    <img src="assets/images/resources/about-three-img-2.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -771,42 +381,69 @@
                 </div>
             </div>
         </section>
+        <!--About Three End-->
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
 
-        <script>
-            // Price Toggle Functionality
-            function showMonthly() {
-                document.getElementById('monthly-plans').style.display = 'flex';
-                document.getElementById('yearly-plans').style.display = 'none';
-
-                // Update active button styles
-                document.querySelectorAll('.toggle-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                event.target.classList.add('active');
-            }
-
-            function showYearly() {
-                document.getElementById('monthly-plans').style.display = 'none';
-                document.getElementById('yearly-plans').style.display = 'flex';
-
-                // Update active button styles
-                document.querySelectorAll('.toggle-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                });
-                event.target.classList.add('active');
-            }
-
-            // Smooth scroll animation for package cards
-            document.querySelectorAll('.btn-package').forEach(btn => {
-                btn.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    // Add your booking modal or redirect logic here
-                    alert('Booking functionality coming soon!');
-                });
-            });
-        </script>
+        <!--Our Mission Start-->
+        <section class="our-mission__two">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="our-mission__left">
+                            <div class="section-title text-left">
+                                <span class="section-title__tagline">Our mission</span>
+                                <h2 class="section-title__title">We Comes To Taking Care
+                                    Of Your Appliacnes</h2>
+                            </div>
+                            <p class="our-mission__text-1">At the end of the day, going forward, a new normal that has
+                                evolved from generation X is on the runway heading towards a streamlined cloud
+                                solution.
+                                strategies to ensure proactive domination. </p>
+                            <div class="our-mission__person">
+                                <div class="our-mission__person-signeture">
+                                    <img src="assets/images/resources/our-mission-person-signeture.png" alt="">
+                                </div>
+                                <div class="our-mission__person-img">
+                                    <img src="assets/images/resources/our-mission-person-img.jpg" alt="">
+                                </div>
+                                <div class="our-mission__person-content">
+                                    <h3>Robert Joe Kerry</h3>
+                                    <p>Founder</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="our-mission__right">
+                            <div class="row">
+                                <!--Our Mission Single Start-->
+                                <div class="col-xl-6">
+                                    <div class="our-mission__single">
+                                        <p class="our-mission__title">our vision</p>
+                                        <p class="our-mission__text-2">At the end of the day, going forw ard, a new
+                                            normal that has evolved from generation X is on the runway heading towards a
+                                            streamlined cloud solution. strat egies to ensure proactive.</p>
+                                    </div>
+                                </div>
+                                <!--Our Mission Single Start-->
+                                <!--Our Mission Single Start-->
+                                <div class="col-xl-6">
+                                    <div class="our-mission__single">
+                                        <p class="our-mission__title">our misson</p>
+                                        <p class="our-mission__text-2">At the end of the day, going forw ard, a new
+                                            normal that has evolved from generation X is on the runway heading towards a
+                                            streamlined cloud solution. strat egies to ensure proactive.</p>
+                                    </div>
+                                </div>
+                                <!--Our Mission Single Start-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Our Mission End-->
 
 
         <!--Site Footer Start-->
@@ -912,7 +549,7 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="site-footer__bottom">
                 <div class="px-4">
                     <div class="row">
