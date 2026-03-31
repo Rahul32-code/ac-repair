@@ -1,0 +1,27 @@
+body {
+    overflow-x: hidden;
+    direction: rtl;
+  }
+  
+  .owl-carousel {
+    direction: ltr;
+  }
+  
+  .list-unstyled {
+    padding-right: 0;
+  }
+
+  /*-- Custome css --*/
+
+  .why-choose-one__img-1{
+    clip-path: polygon(0% 0, 78% 0%, 100% 100%, 0% 100%);
+  }
+  .why-choose-one__points li .icon span{
+    font-size: 45px;
+  }
+  .why-choose-one__points li .text p{
+    font-size: 16px;
+  }
+
+
+

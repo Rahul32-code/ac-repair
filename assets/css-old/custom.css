@@ -27,16 +27,12 @@
   /* Base shadow */
   box-shadow: 0 0 8px rgba(0, 167, 235, 0.6);
   animation: softGlow 2s infinite ease-in-out;
-  transition:
-    box-shadow 0.3s ease,
-    transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 /* Hover Glow Boost */
 .book-btn:hover {
-  box-shadow:
-    0 0 20px rgba(0, 167, 235, 1),
-    0 0 30px rgba(0, 167, 235, 0.8);
+  box-shadow: 0 0 20px rgba(0, 167, 235, 1), 0 0 30px rgba(0, 167, 235, 0.8);
   color: #fff;
   transform: translateY(-50%) rotate(180deg) scale(1.05);
   cursor: pointer;
@@ -84,6 +80,8 @@
   }
 }
 
+
+
 .book-now-btn {
   background-color: #00a7eb; /* Bootstrap primary blue */
   color: #fff;
@@ -96,22 +94,14 @@
 }
 
 .book-now-btn:hover {
-  box-shadow:
-    0 0 20px rgba(0, 167, 235, 1),
-    0 0 30px rgba(0, 167, 235, 0.8);
+  box-shadow: 0 0 20px rgba(0, 167, 235, 1), 0 0 30px rgba(0, 167, 235, 0.8);
   transform: scale(1.05);
 }
 
 @keyframes softGlow {
-  0% {
-    box-shadow: 0 0 6px rgba(0, 167, 235, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 16px rgba(0, 167, 235, 0.9);
-  }
-  100% {
-    box-shadow: 0 0 6px rgba(0, 167, 235, 0.5);
-  }
+  0% { box-shadow: 0 0 6px rgba(0, 167, 235, 0.5); }
+  50% { box-shadow: 0 0 16px rgba(0, 167, 235, 0.9); }
+  100% { box-shadow: 0 0 6px rgba(0, 167, 235, 0.5); }
 }
 
 .book-now-btn {
@@ -123,90 +113,6 @@
 }
 
 .footer-link:hover {
-  color: #fff;
+  color: #fff; 
   text-decoration: none;
-}
-
-/* Minimal Custom CSS */
-.service-detail-img {
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.service-detail-img img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.5s ease;
-}
-
-.service-detail-img:hover img {
-  transform: scale(1.05);
-}
-
-.feature-list li {
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.feature-list li i {
-  color: #ffc107;
-  font-size: 18px;
-}
-
-.points-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.points-list li {
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.points-list li i {
-  color: #28a745;
-  font-size: 16px;
-}
-
-.sidebar-card {
-  transition: all 0.3s ease;
-  border: none;
-  border-radius: 16px;
-}
-
-.sidebar-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.appointment-form input:focus,
-.appointment-form select:focus,
-.appointment-form textarea:focus {
-  border-color: #ffc107;
-  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
-}
-
-.btn-submit {
-  transition: all 0.3s ease;
-}
-
-.btn-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 193, 7, 0.4);
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-  content: "›";
-  font-size: 20px;
-}
-
-@media (max-width: 768px) {
-  .sidebar-sticky {
-    position: relative !important;
-    top: 0 !important;
-  }
 }
